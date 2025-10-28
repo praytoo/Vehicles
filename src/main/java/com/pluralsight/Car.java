@@ -1,4 +1,12 @@
 package com.pluralsight;
 
-public class Car {
+public class Car extends Vehicles{
+
+    public Car(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity) {
+        super(color, numberOfPassengers, cargoCapacity, fuelCapacity);
+    }
+
+    public void goesSkrrt(){
+        System.out.println("Skrrt");
+    }
 }
